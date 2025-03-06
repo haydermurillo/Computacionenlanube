@@ -1,1 +1,48 @@
-
+{
+    "services": [
+      {
+        "name": "frontend",
+        "id": "frontend",
+        "address": "frontend",
+        "port": 5001,
+        "check": {
+          "http": "http://frontend:5001/health",
+          "interval": "10s",
+          "timeout": "5s"
+        }
+      },
+      {
+        "name": "microusers",
+        "id": "microusers",
+        "address": "microusers",
+        "port": 5002,
+        "check": {
+          "http": "http://microusers:5002/health",
+          "interval": "10s",
+          "timeout": "5s"
+        }
+      },
+      {
+        "name": "microproducts",
+        "id": "microproducts",
+        "address": "microproducts",
+        "port": 5003,
+        "check": {
+          "http": "http://microproducts:5003/health",
+          "interval": "10s",
+          "timeout": "5s"
+        }
+      },
+      {
+        "name": "microorders",
+        "id": "microorders",
+        "address": "microorders",
+        "port": 5004,
+        "check": {
+          "http": "http://microorders:5004/health",
+          "interval": "10s",
+          "timeout": "5s"
+        }
+      }
+    ]
+  }
